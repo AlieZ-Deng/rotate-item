@@ -1,0 +1,61 @@
+html{
+	height: 100%;
+
+}
+body{
+	position: relative;
+	background: rgba(0,0,0,.8) url(../img/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	perspective: 800px;
+}
+ul{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 50%;
+	left: 50%;
+	transform-style: preserve-3d;
+	transform: translateZ(-1000px);
+
+}
+ul li {
+	position: absolute;
+	top: -80px;
+	left: -60px;
+	list-style: none;
+	width: 120px;
+	height: 160px;
+	background: rgba(255,255,255,.1);
+	cursor: pointer;
+	border: 1px solid rgba(255,255,255,.3);
+	transition: 3s;
+
+}
+ul li:hover{
+	border: 2px solid #eee;
+}
+
+.btn,.btn2{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	
+	background: #eee;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	border-radius: 20px;
+}
+.btn{
+	bottom: 25%;
+	left: 5%;
+}
+.btn2{
+	bottom: 40%;
+	left: 5%;
+}
